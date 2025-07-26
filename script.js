@@ -53,9 +53,9 @@ buttons.forEach((btn) => {
         operator = btn.value ;
     }
     else if(number1 === null){
-        number1 = btn.value;
+        number1 = display.value;
     } else if(number2 === null){
-        number2 = btn.value ;
+        number2 = display.value ;
     } 
     console.log(number1);
     console.log(operator);
