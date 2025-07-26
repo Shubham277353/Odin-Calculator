@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.display{
+    height: 20em;
+    width: 16em;
+    border: 2px solid black;
+}
+
+.numButtons{
+    font-size: 2em;
+    padding: 14px;
+}
