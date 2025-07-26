@@ -28,23 +28,24 @@ body {
 
 .casio {
   color: white;
-  margin: 2px;
+  margin-bottom: 6px;
   font-weight: 700;
 }
 
 .display {
-  border: 1px solid lightblue;
-  background-color: #1a1a1a;
+  background-color: #585151;
   color: rgb(255, 255, 255);
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding: 10px 15px;
-  font-size: 40px;
+  font-size: 25px;
   font-family: monospace;
   margin-bottom: 18px;
   border-radius: 10px;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
 }
 
 .numButtons {
@@ -71,10 +72,15 @@ body {
   color: #ff4d4d;
 }
 
-.symbol {
-  color: #00ffff;
+.equalTo {
+  background-color: rgb(19, 177, 177);
 }
+
 .symbol:hover {
   background-color: #1a1a1a;
   box-shadow: inset 0 0 8px rgba(0, 255, 255, 0.2);
+}
+
+.equalTo:hover {
+  background-color: rgb(1, 154, 154);
 }
