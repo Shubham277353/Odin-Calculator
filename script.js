@@ -1,5 +1,5 @@
 const add = (num1, num2) => {
-  return parseInt(num1) + parseInt(num2);
+  return parseFloat(num1) + parseFloat(num2);
 };
 
 const subtract = (num1, num2) => {
@@ -47,10 +47,19 @@ const symbol = document.querySelectorAll(".symbol");
 buttons.forEach((btn) => {
   btn.addEventListener("click", () => {
     if (display.textContent === "ERROR") {
-          display.style.color = "white";
+      display.style.color = "white";
       console.log("hello");
       allClear();
     }
+    if (btn.value === "." && String(number2).includes(".") && operator !== "") {
+      return;
+    }
+
+    if (btn.value === "." && String(number1).includes(".") && operator === "") {
+      console.log("hello");
+      return;
+    }
+
     if (btn.value === "=") {
       return;
     } else if (["+", "-", "*", "/"].includes(btn.value) && operator === "") {
@@ -68,8 +77,8 @@ buttons.forEach((btn) => {
       number2 += btn.value;
       display.textContent += btn.value;
     } else if (btn.classList.contains("numbers") && number2 === "") {
-        number1 += btn.value;
-        display.textContent += btn.value;
+      number1 += btn.value;
+      display.textContent += btn.value;
     }
 
     if (
@@ -84,6 +93,7 @@ buttons.forEach((btn) => {
       } else {
         operator = btn.value;
         display.textContent = "";
+        value = Math.round(value * 100000000) / 100000000;
         display.textContent += value;
         display.textContent += ` ${btn.value} `;
         number1 = value;
@@ -103,6 +113,7 @@ equalTo.addEventListener("click", () => {
     display.textContent = "ERROR";
     display.style.color = "red";
   } else {
+    operatedNumber = Math.round(operatedNumber * 100000000) / 100000000;
     display.textContent = operatedNumber;
     number1 = operatedNumber;
     number2 = "";
@@ -116,9 +127,11 @@ function allClear() {
   number2 = "";
   operator = "";
   result = "";
+  display.style.color = "white";
 }
 
 const ac = document.querySelector(".ac");
 const del = document.querySelector(".del");
 
 ac.addEventListener("click", () => allClear());
+
