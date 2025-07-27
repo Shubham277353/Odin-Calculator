@@ -92,6 +92,13 @@ body {
   box-shadow: inset 0 0 8px rgba(0, 255, 255, 0.2);
 }
 
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
 .equalTo:hover {
   background-color: rgb(1, 154, 154);
 }
@@ -108,42 +115,43 @@ body {
 
 @media (max-width: 500px) {
   .calculator {
-    width: 90%;
-    padding: 12px;
+    width: 95vw;
+    padding: 15px;
+    border-radius: 20px;
   }
 
   .display {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     height: 50px;
-    padding: 8px 10px;
-  }
-
-  .numButtons {
-    font-size: 20px;
-    padding: 12px;
-    flex: 1;
-    margin: 3px;
+    padding: 10px;
   }
 
   .row {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 8px;
   }
 
-  .ac, .del {
-    flex: 1 1 45%;
-    padding: 12px;
-    font-size: 20px;
+  .numButtons {
+    flex: 1 1 22%;
+    font-size: 1.2rem;
+    padding: 14px 0;
   }
 
+  .ac,
   .del {
-    padding: 12px;
+    flex: 1 1 48%;
+    font-size: 1.1rem;
+    padding: 14px 0;
   }
 
   .footer {
-    font-size: 18px;
-    bottom: 10px;
+    position: static;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
   }
 }
 
