@@ -2,7 +2,7 @@
 
 A retro-inspired calculator built with **HTML**, **CSS**, and **JavaScript**, featuring a modern UI with a nostalgic touch. Designed to mimic the classic Casio layout, this project helps practice DOM manipulation and state handling in JavaScript.
 
-![Calculator Preview](./screenshot.png) <!-- Update path if needed -->
+![Calculator Preview](https://github.com/Shubham277353/Odin-Calculator/blob/main/images/screeshot.png) <!-- Update path if needed -->
 
 ---
 
