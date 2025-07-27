@@ -76,6 +76,9 @@ body {
   background-color: rgb(19, 177, 177);
 }
 
+.symbol{
+  /* background-color: rgb(228, 203, 66); */
+}
 .symbol:hover {
   background-color: #1a1a1a;
   box-shadow: inset 0 0 8px rgba(0, 255, 255, 0.2);
