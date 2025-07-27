@@ -105,3 +105,45 @@ body {
   font-size: 25px;
   opacity: 0.6;
 }
+
+@media (max-width: 500px) {
+  .calculator {
+    width: 90%;
+    padding: 12px;
+  }
+
+  .display {
+    font-size: 1.5rem;
+    height: 50px;
+    padding: 8px 10px;
+  }
+
+  .numButtons {
+    font-size: 20px;
+    padding: 12px;
+    flex: 1;
+    margin: 3px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .ac, .del {
+    flex: 1 1 45%;
+    padding: 12px;
+    font-size: 20px;
+  }
+
+  .del {
+    padding: 12px;
+  }
+
+  .footer {
+    font-size: 18px;
+    bottom: 10px;
+  }
+}
+
