@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,7 +6,7 @@
 }
 
 body {
-  background-color: #c7c7c7;
+  background: linear-gradient(to right, #74ebd5, #9face6);
 }
 
 .container {
@@ -21,9 +22,8 @@ body {
   border: 2px solid black;
   padding: 18px;
   border-radius: 16px;
-  background-color: #000000;
-
-  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3);
 }
 
 .casio {
@@ -33,15 +33,15 @@ body {
 }
 
 .display {
-  background-color: #585151;
-  color: rgb(255, 255, 255);
+  background-color: #857c7c;
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  color: white;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding: 10px 15px;
-  font-size: 25px;
-  font-family: monospace;
   margin-bottom: 18px;
   border-radius: 10px;
   box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.6);
@@ -69,15 +69,23 @@ body {
 .del {
   font-size: 28px;
   padding: 13px 56px;
-  color: #ff4d4d;
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.del{
+  font-size: 24px;
+  padding: 13px 62px;
 }
 
 .equalTo {
-  background-color: rgb(19, 177, 177);
+  background-color: #00d1d1;
+  color: white;
 }
 
-.symbol{
-  /* background-color: rgb(228, 203, 66); */
+.operator {
+  background-color: #444;
+  color: #f0ad4e;
 }
 .symbol:hover {
   background-color: #1a1a1a;
@@ -86,4 +94,14 @@ body {
 
 .equalTo:hover {
   background-color: rgb(1, 154, 154);
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  font-size: 25px;
+  opacity: 0.6;
 }

@@ -135,3 +135,15 @@ const del = document.querySelector(".del");
 
 ac.addEventListener("click", () => allClear());
 
+del.addEventListener("click", () => {
+
+  if (number2 !== "") {
+    number2 = number2.slice(0, -1);
+  } else if (operator !== "") {
+    operator = "";
+  } else if (number1 !== "") {
+    number1 = String(number1).slice(0, -1);
+  }
+  display.textContent = number1 + (operator ? ` ${operator} ` : "") + number2;
+})
+
