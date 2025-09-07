@@ -22,7 +22,7 @@ A retro-inspired calculator built with **HTML**, **CSS**, and **JavaScript**, fe
 
 ## 🚀 Demo
 
-🔗 Live Demo  [Click here to use the calculator!](https://shubham277353.github.io/Odin-Calculator/)
+🔗 Live Demo  [Click here to use the calculator!](https://odin-calculator-seven.vercel.app/)
   
 
 ---
